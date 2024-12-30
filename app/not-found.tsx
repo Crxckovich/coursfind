@@ -1,11 +1,11 @@
-import {Htag} from "@/components/Htag";
+import {Htag, P} from "@/components/Htag";
 
-export function Error404() {
+export default function NotFound() {
     return (
         <div className="container mx-auto py-10">
             <Htag tag='h1'>Ошибка 404</Htag>
+            <P size='b' className="mt-4">Страница не найдена</P>
         </div>
     );
 }
 
-export default Error404;
