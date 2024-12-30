@@ -1,0 +1,11 @@
+.h1 {
+    @apply font-halvar font-bold lg:text-5xl text-3xl;
+}
+
+.h2 {
+    @apply font-halvar font-bold lg:text-[38px] text-[24px];
+}
+
+.h3 {
+    @apply font-halvar font-bold lg:text-2xl text-xl;
+}

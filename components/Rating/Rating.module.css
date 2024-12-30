@@ -1,0 +1,19 @@
+.wrapper {
+  @apply flex items-center gap-1;
+}
+
+.icon {
+  @apply stroke-accent fill-accent size-6;
+}
+
+.disabled {
+  @apply opacity-90 pointer-events-none;
+}
+
+.hoverEffect {
+  @apply transition-transform duration-300 hover:scale-110 cursor-pointer;
+}
+
+.unrated {
+  @apply stroke-primary/40 fill-none;
+}

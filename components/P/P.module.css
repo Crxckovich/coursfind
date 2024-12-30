@@ -1,0 +1,7 @@
+.b {
+    @apply font-raleway lg:text-xl text-base;
+}
+
+.s {
+    @apply font-raleway lg:text-base text-sm;
+}

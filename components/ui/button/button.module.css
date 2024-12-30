@@ -1,0 +1,52 @@
+.button {
+  @apply inline-flex items-center tracking-wide font-halvar font-medium justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0;
+}
+
+.button--default {
+  @apply bg-accent text-white hover:bg-accent/90;
+}
+
+.button--destructive {
+  @apply bg-destructive text-destructive-foreground hover:bg-destructive/90;
+}
+
+.button--outline {
+  @apply border border-border hover:bg-accent hover:text-primary relative;
+  transition: all 0.2s ease;
+}
+
+.button--outline .arrow {
+  transition: transform 0.2s ease;
+}
+
+.button--outline:hover .arrow {
+  transform: translateX(10px);
+}
+
+.button--secondary {
+  @apply bg-secondary border border-border font-raleway font-normal text-secondary-foreground hover:bg-primary/10;
+}
+
+.button--ghost {
+  @apply font-raleway font-normal hover:text-secondary-foreground hover:bg-primary/10;
+}
+
+.button--link {
+  @apply text-accent underline-offset-4 hover:underline;
+}
+
+.button--size-default {
+  @apply h-10 px-4 py-2;
+}
+
+.button--size-sm {
+  @apply h-9 rounded-md px-3;
+}
+
+.button--size-lg {
+  @apply h-11 rounded-md px-8;
+}
+
+.button--size-icon {
+  @apply h-10 w-10;
+}
